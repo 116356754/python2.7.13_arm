@@ -15,7 +15,7 @@ export CC=arm-none-linux-gnueabi-gcc
 ### 2.配置
 
 ```
-./configure --prefix=/usr/local/zlib
+./config no-asm shared --prefix=/usr/local/ssl
 ```
 
 #### 3.编译
@@ -42,14 +42,13 @@ zlib zlibmodule.c -I/usr/local/zlib/include -L/usr/local/zlib/lib -lz
 
 跟着对python进行重新配置、编译、安装
 
-#### 6.添加zlib.so到python中
+#### 6.添加openssl到python中
 
-将/usr/local/zlib/lib/文件夹的文件拷贝到python的lib目录下，以后加入到arm中的linux的LD\_LIBRARY\_PATH变量中。
+将/usr/local/ssl/lib/文件夹的文件拷贝到python的lib目录下，以后加入到arm中的linux的LD\_LIBRARY\_PATH变量中。
 
 ```
-./config no-asm shared --prefix=/usr/local/ssl \
-    --cross-compile-prefix=/usr/local/arm/4.8.3/bin/arm-none-linux-gnueabi-
+
 ```
 
-
+![](/assets/importzlib.png)
 
