@@ -5,4 +5,5 @@
 * [6502平台](6502ping-tai.md)
 * [6657平台](6657ping-tai.md)
 * [补丁文件](bu-ding-wen-jian.md)
+* [zlib编译添加](zlibbian-yi-tian-jia.md)
 
