@@ -25,25 +25,27 @@ mkdir python2_7_13_for_arm
 
 ```
 @@ -233,8 +239,8 @@ class PyBuildExt(build_ext):
- 
+
              # If a module has already been built statically,
              # don't build it here
 -            if ext.name in sys.builtin_module_names:
 -                self.extensions.remove(ext)
 +            #if ext.name in sys.builtin_module_names:
 +            #    self.extensions.remove(ext)
- 
+
          # Parse Modules/Setup and Modules/Setup.local to figure out which
          # modules are turned on in the file.
 ```
 
 * ## 编译X86版本PYTHON
 
-进入python源码目录，执行：
+#### 进入python2\_7\_13\_for\_x86\_64/目录，然后执行如下脚本：
 
-```
-./configure
-```
+    ../Python-2.7.13/configure --prefix=`pwd`
+
+#### 2.
+
+
 
 
 
