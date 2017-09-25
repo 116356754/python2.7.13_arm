@@ -18,13 +18,13 @@ export CC=arm-none-linux-gnueabi-gcc
 ./configure --prefix=/usr/local/zlib
 ```
 
-3.编译
+#### 3.编译
 
 ```
 make
 ```
 
-4.安装
+#### 4.安装
 
 ```
 make install
