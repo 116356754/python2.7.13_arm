@@ -44,11 +44,7 @@ zlib zlibmodule.c -I/usr/local/zlib/include -L/usr/local/zlib/lib -lz
 
 #### 6.添加zlib.so到python中
 
-将/usr/local/zlib/lib/文件夹的libz.so.1.2.11，重名为libz.so然后添加到python的lib/python2.7/lib-dynload目录下，
+将/usr/local/zlib/lib/文件夹的文件拷贝到python的lib目录下，以后加入到arm中的linux的LD\_LIBRARY\_PATH变量中。
 
-![](/assets/zlib—import.png)
-
-
-
-
+![](/assets/importzlib.png)
 
