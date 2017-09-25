@@ -4,4 +4,5 @@
 * [requirement](chapter1.md)
 * [6502平台](6502ping-tai.md)
 * [6657平台](6657ping-tai.md)
+* [补丁文件](bu-ding-wen-jian.md)
 
