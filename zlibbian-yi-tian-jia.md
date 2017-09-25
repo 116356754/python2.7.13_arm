@@ -32,13 +32,23 @@ make install
 
 在/usr/local/zlib/lib目录下是动态与静态库文件，/usr/local/zlib//include下是头文件。
 
-5.修改python的模块文件
+#### 5.修改python的模块文件
 
 在Modules/setup 找到我们前面setup.dist的467行，修改成为如下语句
 
 ```
 zlib zlibmodule.c -I/usr/local/zlib/include -L/usr/local/zlib/lib -lz
 ```
+
+跟着对python进行重新配置、编译、安装
+
+#### 6.添加zlib.so到python中
+
+将/usr/local/zlib/lib/文件夹的libz.so.1.2.11，重名为libz.so然后添加到python的lib/python2.7/lib-dynload目录下，
+
+![](/assets/zlib—import.png)
+
+
 
 
 
