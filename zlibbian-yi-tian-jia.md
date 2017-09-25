@@ -10,5 +10,11 @@ zlib的下载地址为：[http://www.zlib.net/](http://www.zlib.net/)，下载�
 export CC=arm-none-linux-gnueabi-gcc
 ```
 
+### 2.配置
+
+```
+./configure --prefix=/usr/local/zlib
+```
+
 
 
