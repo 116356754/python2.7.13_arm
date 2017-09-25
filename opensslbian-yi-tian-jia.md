@@ -46,9 +46,5 @@ zlib zlibmodule.c -I/usr/local/zlib/include -L/usr/local/zlib/lib -lz
 
 将/usr/local/ssl/lib/文件夹的文件拷贝到python的lib目录下，以后加入到arm中的linux的LD\_LIBRARY\_PATH变量中。
 
-```
-
-```
-
 ![](/assets/importzlib.png)
 
