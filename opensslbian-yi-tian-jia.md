@@ -34,11 +34,9 @@ make install
 
 #### 5.修改python的模块文件
 
-在Modules/setup 找到我们前面setup.dist的467行，修改成为如下语句
+在Modules/setup 取消注释setup.dist的214行218、219、220与221行，修改成为如下语句
 
-```
-zlib zlibmodule.c -I/usr/local/zlib/include -L/usr/local/zlib/lib -lz
-```
+![](/assets/sslcompile.png)
 
 跟着对python进行重新配置、编译、安装
 
