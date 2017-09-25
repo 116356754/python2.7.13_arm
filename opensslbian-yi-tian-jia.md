@@ -9,7 +9,13 @@ zlib的下载地址为：[http://www.openssl.org/source/](http://www.openssl.org
 #### 1.导出环境变量
 
 ```
+#6502环境导出
 export CC=arm-none-linux-gnueabi-gcc
+```
+
+```
+#6657环境导出
+export CC=arm-linux-gnueabihf-gcc
 ```
 
 ### 2.配置
