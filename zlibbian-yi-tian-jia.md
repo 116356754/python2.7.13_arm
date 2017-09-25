@@ -30,5 +30,5 @@ make
 make install
 ```
 
-
+在/usr/local/zlib/lib目录下是动态与静态库文件，/usr/local/zlib//include下是头文件。
 
