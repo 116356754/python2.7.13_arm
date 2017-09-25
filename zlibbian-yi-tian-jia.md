@@ -4,6 +4,8 @@ zlib的下载地址为：[http://www.zlib.net/](http://www.zlib.net/)，下载�
 
 ### 6502交叉编译
 
+进入zlib的源码目录。
+
 #### 1.导出环境变量
 
 ```
@@ -14,6 +16,18 @@ export CC=arm-none-linux-gnueabi-gcc
 
 ```
 ./configure --prefix=/usr/local/zlib
+```
+
+3.编译
+
+```
+make
+```
+
+4.安装
+
+```
+make install
 ```
 
 
