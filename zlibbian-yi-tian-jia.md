@@ -6,10 +6,16 @@ zlib的下载地址为：[http://www.zlib.net/](http://www.zlib.net/)，下载�
 
 进入zlib的源码目录。
 
-#### 1.6502导出环境变量
+#### 1.导出环境变量
 
 ```
+#6502环境导出
 export CC=arm-none-linux-gnueabi-gcc
+```
+
+```
+#6657环境导出
+export CC=arm-linux-gnueabihf-gcc
 ```
 
 ### 2.配置
