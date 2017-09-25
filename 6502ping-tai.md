@@ -99,5 +99,13 @@ make HOSTPYTHON=../python2_7_13_for_x86_64/python \
     -j4
 ```
 
+#### 5.安装
+
+    make install HOSTPYTHON=../python2_7_13_for_x86_64/python \
+        BLDSHARED="arm-none-linux-gnueabi-gcc -shared" \
+        CROSS_COMPILE=arm-none-linux-gnueabi- \
+        CROSS_COMPILE_TARGET=yes \
+        prefix=`pwd`
+
 
 
