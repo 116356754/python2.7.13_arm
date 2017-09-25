@@ -1,4 +1,4 @@
 # Python 2.7.3 交叉编译到ARM
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+本手册主要是介绍python 2.7.3编译到arm平台的6502和6657两个硬件网关上面的，所以在编译的平台有两种编译器，分为两张分别介绍。
 
