@@ -19,7 +19,7 @@ mkdir python2_7_13_for_x86_64
 mkdir python2_7_13_for_arm
 ```
 
-* ## 修改Python-2.7.13的setup.py
+* ### 修改Python-2.7.13的setup.py
 
 在python2.7.13解压的文件夹名称为Python-2.7.13下面有个setup.py文件，对该文件进行修改，注释掉236行与237行代码，如下所示：
 
@@ -37,7 +37,7 @@ mkdir python2_7_13_for_arm
          # modules are turned on in the file.
 ```
 
-* ## 编译X86版本PYTHON
+* ### 编译X86版本PYTHON
 
 #### 1.进入python2\_7\_13\_for\_x86\_64/目录，然后执行如下脚本：
 
@@ -53,6 +53,23 @@ make -j4
 
 ```
 make install
+```
+
+* ### 交叉编译
+
+#### 1.打补丁
+
+交叉编译的第一步是为python源码打上交叉编译用的patch：[Python-2.7.13-compile.patch.tar.gz](http://files.cnblogs.com/files/pengdonglin137/Python-2.7.13-xcompile.patch.tar.gz)，将补丁文件解压并放置在python2\_7\_13\_for\_arm文件夹中，进入到Python-2.7.13目录中，
+
+```
+patch -p1 < ../python2_7_13_for_arm/Python-2.7.13-xcompile.patch
+```
+
+#### 2.导出环境变量
+
+```
+export CC=arm-none-linux-gnueabi-gcc CXX=arm-none-linux-gnueabi-g++ \
+ AR=arm-none-linux-gnueabi-ar RANLIB=arm-none-linux-gnueabi-ranlib 
 ```
 
 
