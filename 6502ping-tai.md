@@ -69,8 +69,22 @@ patch -p1 < ../python2_7_13_for_arm/Python-2.7.13-xcompile.patch
 
 ```
 export CC=arm-none-linux-gnueabi-gcc CXX=arm-none-linux-gnueabi-g++ \
- AR=arm-none-linux-gnueabi-ar RANLIB=arm-none-linux-gnueabi-ranlib 
+ AR=arm-none-linux-gnueabi-ar RANLIB=arm-none-linux-gnueabi-ranlib
 ```
+
+#### 3.配置
+
+进入到python2\_7\_13\_for\_arm文件夹中
+
+    cd python2_7_13_for_arm
+
+    ../Python-2.7.13/configure --prefix=`pwd` \
+        --host=arm-none-linux-gnueabi \
+        --build=x86_64-linux-gnu \
+        --enable-ipv6 \
+        --enable-shared \
+        ac_cv_file__dev_ptmx="yes" \
+        ac_cv_file__dev_ptc="no"
 
 
 
