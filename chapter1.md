@@ -2,7 +2,7 @@
 
 * ### 下载python源码文件
 
-在编译的时候，网上下载python2.7.13的源码，地址为[_http://mirrors.sohu.com/python/2.7.3/Python-2.7.13.tgz_](http://mirrors.sohu.com/python/2.7.3/Python-2.7.13.tgz)。
+在编译的时候，网上下载python2.7.13的源码，地址为[https://www.python.org/downloads/release/python-2713/](https://www.python.org/downloads/release/python-2713/)。
 
 * ### python交叉编译补丁文件
 
