@@ -39,13 +39,21 @@ mkdir python2_7_13_for_arm
 
 * ## 编译X86版本PYTHON
 
-#### 进入python2\_7\_13\_for\_x86\_64/目录，然后执行如下脚本：
+#### 1.进入python2\_7\_13\_for\_x86\_64/目录，然后执行如下脚本：
 
     ../Python-2.7.13/configure --prefix=`pwd`
 
-#### 2.
+#### 2.编译
 
+```
+make -j4
+```
 
+#### 3.安装
+
+```
+make install
+```
 
 
 
