@@ -4,7 +4,7 @@ openssl的下载地址为：[http://www.openssl.org/source/](http://www.openssl.
 
 ### 6502与6657交叉编译
 
-进入zlib的源码目录。
+进入openssl的源码目录。
 
 #### 1.导出环境变量
 
