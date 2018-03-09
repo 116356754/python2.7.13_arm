@@ -77,35 +77,5 @@ make install
 
 #### 4.编译和安装跟原来的命令一样
 
-```
-#6502
-make HOSTPYTHON=../python2_7_13_for_x86_64/python \
-    HOSTPGEN=../python2_7_13_for_x86_64/Parser/pgen \
-    BLDSHARED="arm-none-linux-gnueabi-gcc -shared" \
-    CROSS_COMPILE=arm-none-linux-gnueabi- \
-    CROSS_COMPILE_TARGET=yes \
-    HOSTARCH=arm-none-linux-gnueabi \
-    BUILDARCH=x86_64-linux-gnu \
-    -j4
-#6657
-make HOSTPYTHON=../python2_7_13_for_x86_64/python \
-    HOSTPGEN=../python2_7_13_for_x86_64/Parser/pgen \
-    BLDSHARED="arm-none-linux-gnueabi-gcc -shared" \
-    CROSS_COMPILE=arm-none-linux-gnueabi- \
-    CROSS_COMPILE_TARGET=yes \
-    HOSTARCH=arm-none-linux-gnueabi \
-    BUILDARCH=x86_64-linux-gnu \
-    -j4
-```
-
-#### 5.安装
-
-    #6502
-    make install HOSTPYTHON=../python2_7_13_for_x86_64/python \
-        BLDSHARED="arm-none-linux-gnueabi-gcc -shared" \
-        CROSS_COMPILE=arm-none-linux-gnueabi- \
-        CROSS_COMPILE_TARGET=yes \
-        prefix=`pwd`
-
 
 
