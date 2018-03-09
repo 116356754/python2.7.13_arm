@@ -26,7 +26,7 @@ export CC=arm-linux-gnueabihf-gcc
 ```
 
 ```
-#6502环境导出
+#6657环境导出
 ./configure --host=arm-linux-gnueabihf --prefix=/usr/local/sqlite
 ```
 
