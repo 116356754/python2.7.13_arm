@@ -59,12 +59,13 @@ make install
         ac_cv_file__dev_ptmx="yes" \
         ac_cv_file__dev_ptc="no" \
         LDFLAGS="-L/usr/local/sqlite/lib" \
-        CPPFLAGS="-I/usr/local/sqlite/include"
+        CPPFLAGS="-I/usr/local/sqlite/include"    
+
+
 
     #6657
-    cd python2_7_13_for_arm
     ../Python-2.7.13/configure --prefix=`pwd` \
-        --host=arm-none-linux-gnueabi \
+        --host=arm-linux-gnueabihf \
         --build=x86_64-linux-gnu \
         --enable-ipv6 \
         --enable-shared \
@@ -73,14 +74,20 @@ make install
         LDFLAGS="-L/usr/local/sqlite/lib" \
         CPPFLAGS="-I/usr/local/sqlite/include"
 
-```
-    
-```
 
 #### 4.编译
 
 ```
 #6502
+make HOSTPYTHON=../python2_7_13_for_x86_64/python \
+    HOSTPGEN=../python2_7_13_for_x86_64/Parser/pgen \
+    BLDSHARED="arm-none-linux-gnueabi-gcc -shared" \
+    CROSS_COMPILE=arm-none-linux-gnueabi- \
+    CROSS_COMPILE_TARGET=yes \
+    HOSTARCH=arm-none-linux-gnueabi \
+    BUILDARCH=x86_64-linux-gnu \
+    -j4
+#6657
 make HOSTPYTHON=../python2_7_13_for_x86_64/python \
     HOSTPGEN=../python2_7_13_for_x86_64/Parser/pgen \
     BLDSHARED="arm-none-linux-gnueabi-gcc -shared" \
