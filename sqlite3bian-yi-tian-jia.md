@@ -61,8 +61,7 @@ make install
         LDFLAGS="-L/usr/local/sqlite/lib" \
         CPPFLAGS="-I/usr/local/sqlite/include"
 
-
-
+6657也是需要添加sqlite的lib和include目录
 
     #6657
     ../Python-2.7.13/configure --prefix=`pwd` \
