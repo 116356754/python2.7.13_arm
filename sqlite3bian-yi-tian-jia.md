@@ -4,7 +4,7 @@ SQLite的下载地址为：[http://www.sqlite.org/download.html](http://www.sqli
 
 ### 6502与6657交叉编译
 
-进入zlib的源码目录。
+进入SQLite的源码目录。
 
 #### 1.导出环境变量
 
@@ -21,7 +21,7 @@ export CC=arm-linux-gnueabihf-gcc
 ### 2.配置
 
 ```
-./config no-asm shared --prefix=/usr/local/ssl
+./configure --host=arm-linux-gnueabihf --prefix=/usr/local/ssl
 ```
 
 #### 3.编译
