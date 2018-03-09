@@ -25,6 +25,11 @@ export CC=arm-linux-gnueabihf-gcc
 ./configure --host=arm-none-linux-gnueabi --prefix=/usr/local/ssl
 ```
 
+```
+#6502环境导出
+./configure --host=arm-linux-gnueabihf --prefix=/usr/local/ssl
+```
+
 #### 3.编译
 
 ```
