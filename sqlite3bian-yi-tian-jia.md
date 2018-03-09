@@ -75,7 +75,7 @@ make install
         LDFLAGS="-L/usr/local/sqlite/lib" \
         CPPFLAGS="-I/usr/local/sqlite/include"
 
-#### 4.编译
+#### 4.编译和安装跟原来的命令一样
 
 ```
 #6502
