@@ -42,5 +42,5 @@ make
 make install
 ```
 
-在/usr/local/zlib/lib目录下是动态与静态库文件，/usr/local/zlib//include下是头文件。
+在/usr/local/sqlite/lib目录下是动态与静态库文件，/usr/local/sqlite/include下是头文件。
 
