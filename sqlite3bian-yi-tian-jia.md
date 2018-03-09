@@ -61,6 +61,22 @@ make install
         LDFLAGS="-L/usr/local/sqlite/lib" \
         CPPFLAGS="-I/usr/local/sqlite/include"
 
+    #6657
+    cd python2_7_13_for_arm
+    ../Python-2.7.13/configure --prefix=`pwd` \
+        --host=arm-none-linux-gnueabi \
+        --build=x86_64-linux-gnu \
+        --enable-ipv6 \
+        --enable-shared \
+        ac_cv_file__dev_ptmx="yes" \
+        ac_cv_file__dev_ptc="no" \
+        LDFLAGS="-L/usr/local/sqlite/lib" \
+        CPPFLAGS="-I/usr/local/sqlite/include"
+
+```
+    
+```
+
 #### 4.编译
 
 ```
