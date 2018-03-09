@@ -1,6 +1,6 @@
 ## OpenSSL交叉编译
 
-zlib的下载地址为：[http://www.openssl.org/source/](http://www.openssl.org/source/)，下载解压到虚拟机中，对6502和6657两种平台发布进行交叉编译。
+openssl的下载地址为：[http://www.openssl.org/source/](http://www.openssl.org/source/)，下载解压到虚拟机中，对6502和6657两种平台发布进行交叉编译。
 
 ### 6502与6657交叉编译
 
