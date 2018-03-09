@@ -44,3 +44,7 @@ make install
 
 在/usr/local/sqlite/lib目录下是动态与静态库文件，/usr/local/sqlite/include下是头文件。
 
+#### 5.对python进行重新编译
+
+
+
