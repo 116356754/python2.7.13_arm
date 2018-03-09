@@ -36,7 +36,7 @@ make
 make install
 ```
 
-在/usr/local/zlib/lib目录下是动态与静态库文件，/usr/local/zlib//include下是头文件。
+在/usr/local/ssl/lib目录下是动态与静态库文件，/usr/local/ssl/include下是头文件。
 
 #### 5.修改python的模块文件
 
