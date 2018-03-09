@@ -22,12 +22,12 @@ export CC=arm-linux-gnueabihf-gcc
 
 ```
 #6502环境导出
-./configure --host=arm-none-linux-gnueabi --prefix=/usr/local/ssl
+./configure --host=arm-none-linux-gnueabi --prefix=/usr/local/sqlite
 ```
 
 ```
 #6502环境导出
-./configure --host=arm-linux-gnueabihf --prefix=/usr/local/ssl
+./configure --host=arm-linux-gnueabihf --prefix=/usr/local/sqlite
 ```
 
 #### 3.编译
