@@ -59,7 +59,8 @@ make install
         ac_cv_file__dev_ptmx="yes" \
         ac_cv_file__dev_ptc="no" \
         LDFLAGS="-L/usr/local/sqlite/lib" \
-        CPPFLAGS="-I/usr/local/sqlite/include"    
+        CPPFLAGS="-I/usr/local/sqlite/include"
+
 
 
 
