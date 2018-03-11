@@ -74,7 +74,13 @@ make install
         LDFLAGS="-L/usr/local/sqlite/lib -L/usr/local/zlib/lib" \
         CPPFLAGS="-I/usr/local/sqlite/include -I/usr/local/zlib/include"
 
-#### 4.编译和安装跟原来的命令一样
+#### 4.重新编译和安装
+
+#### 5.添加zlib、openssl和slqite到python中
+
+将/usr/local/zlib/lib/文件夹的文件拷贝到python的lib目录下；将/usr/local/ssl/lib/文件夹的文件拷贝到python的lib目录下；将/usr/local/sqlite/lib/文件夹的文件拷贝到python的lib目录下；以后加入到arm中的linux的LD\_LIBRARY\_PATH变量中。
+
+![](/assets/lib.png)
 
 
 
