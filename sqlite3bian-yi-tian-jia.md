@@ -58,8 +58,8 @@ make install
         --enable-shared \
         ac_cv_file__dev_ptmx="yes" \
         ac_cv_file__dev_ptc="no" \
-        LDFLAGS="-L/usr/local/sqlite/lib  -L/usr/local/zlib/lib" \
-        CPPFLAGS="-I/usr/local/sqlite/include"
+        LDFLAGS="-L/usr/local/sqlite/lib -L/usr/local/zlib/lib" \
+        CPPFLAGS="-I/usr/local/sqlite/include -I/usr/local/zlib/include"
 
 6657也是需要添加sqlite的lib和include目录
 
@@ -71,8 +71,8 @@ make install
         --enable-shared \
         ac_cv_file__dev_ptmx="yes" \
         ac_cv_file__dev_ptc="no" \
-        LDFLAGS="-L/usr/local/sqlite/lib" \
-        CPPFLAGS="-I/usr/local/sqlite/include"
+        LDFLAGS="-L/usr/local/sqlite/lib -L/usr/local/zlib/lib" \
+        CPPFLAGS="-I/usr/local/sqlite/include -I/usr/local/zlib/include"
 
 #### 4.编译和安装跟原来的命令一样
 
