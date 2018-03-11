@@ -46,11 +46,5 @@ make install
 zlib zlibmodule.c -I/usr/local/zlib/include -L/usr/local/zlib/lib -lz
 ```
 
-跟着对python进行重新配置、编译、安装
 
-#### 6.添加zlib.so到python中
-
-将/usr/local/zlib/lib/文件夹的文件拷贝到python的lib目录下，以后加入到arm中的linux的LD\_LIBRARY\_PATH变量中。
-
-![](/assets/importzlib.png)
 
