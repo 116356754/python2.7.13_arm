@@ -48,8 +48,6 @@ ln -s /usr/local/python27/bin/python /usr/bin/python
 python -V
 ```
 
-## APSW交叉编译
-
 ### 6502与6657交叉编译
 
 进入APSW的源码目录。
@@ -72,7 +70,7 @@ export BLDSHARED="${TOOLCHAIN}gcc -shared"
 export LDSHARED="${TOOLCHAIN}gcc -shared"
 ```
 
-### 2.配置SQLite目录信息
+#### 2.配置APSW目录信息
 
 ```
 export RFS="/"
@@ -86,11 +84,7 @@ export LDFLAGS="-I${RFS}/usr/include -L${RFS}/usr/lib -L${RFS}/lib -L${RFS}/usr/
 python setup.py build
 ```
 
-#### 4.安装
-
-```
-python setup.py install
-```
+在build目录出现apsw.so文件就是我们需要的库，拷贝到python的包目录即可。
 
 
 
