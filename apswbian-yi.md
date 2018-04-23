@@ -6,10 +6,16 @@ apsw的下载地址为[apsw-3.22.0-r1.zip](https://github.com/rogerbinns/apsw/re
 
 ubuntu12.04自带的python为2.7.3的，而该版本unicode默认是unsigned long，也就是4个字节的长度，而我们编译的python2.7.13的unicode是unsigned short，也就是2个字节的长度，虽然也能编译出来，但是在2.7.13中会报错：`undefined symbol: PyUnicodeUCS4_DecodeUTF8`
 
+移除原来的python
+
+```
+rm /usr/bin/python
+```
+
 解压python2.7.13到目录中
 
 ```
-tar xf Python-2.7.13.tar  
+tar xf Python-2.7.13.tar
 ```
 
 配置
