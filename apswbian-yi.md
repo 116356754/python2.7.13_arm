@@ -50,5 +50,51 @@ python -V
 
 ## APSW交叉编译
 
+### 6502与6657交叉编译
+
+进入APSW的源码目录。
+
+#### 1.导出环境变量
+
+```
+#6502环境导出
+export TOOLCHAIN=arm-none-linux-gnueabi-
+export CC=arm-none-linux-gnueabi-gcc CXX=arm-none-linux-gnueabi-g++ AR=arm-none-linux-gnueabi-ar RANLIB=arm-none-linux-gnueabi-ranlib
+export BLDSHARED="${TOOLCHAIN}gcc -shared"
+export LDSHARED="${TOOLCHAIN}gcc -shared"
+```
+
+```
+#6657环境导出
+export TOOLCHAIN=arm-linux-gnueabihf-
+export CC=arm-linux-gnueabihf-gcc CXX=arm-linux-gnueabihf-g++ AR=arm-linux-gnueabihf-ar RANLIB=arm-linux-gnueabihf-ranlib
+export BLDSHARED="${TOOLCHAIN}gcc -shared"
+export LDSHARED="${TOOLCHAIN}gcc -shared"
+```
+
+### 2.配置
+
+```
+#6502环境导出
+./configure --host=arm-none-linux-gnueabi --prefix=/usr/local/sqlite
+```
+
+```
+#6657环境导出
+./configure --host=arm-linux-gnueabihf --prefix=/usr/local/sqlite
+```
+
+#### 3.编译
+
+```
+make
+```
+
+#### 4.安装
+
+```
+make install
+```
+
 
 

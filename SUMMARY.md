@@ -8,5 +8,5 @@
 * [zlib编译添加](zlibbian-yi-tian-jia.md)
 * [openssl编译添加](opensslbian-yi-tian-jia.md)
 * [sqlite3编译添加](sqlite3bian-yi-tian-jia.md)
-* [APSW编译](apswbian-yi.md)
+* [APSW库编译](apswbian-yi.md)
 
