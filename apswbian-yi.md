@@ -1,4 +1,4 @@
-## APSW交叉编译
+## APSW库编译
 
 apsw的下载地址为[apsw-3.22.0-r1.zip](https://github.com/rogerbinns/apsw/releases/download/3.22.0-r1/apsw-3.22.0-r1.zip)，该库以来前面编译的SQLite3，所以需要事先能够编译出Sqlite安装到/usr/local/sqlite目录中。
 
@@ -47,6 +47,8 @@ ln -s /usr/local/python27/bin/python /usr/bin/python
 ```
 python -V
 ```
+
+## APSW交叉编译
 
 
 
