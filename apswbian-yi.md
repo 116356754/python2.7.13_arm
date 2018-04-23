@@ -72,28 +72,24 @@ export BLDSHARED="${TOOLCHAIN}gcc -shared"
 export LDSHARED="${TOOLCHAIN}gcc -shared"
 ```
 
-### 2.配置
+### 2.配置SQLite目录信息
 
 ```
-#6502环境导出
-./configure --host=arm-none-linux-gnueabi --prefix=/usr/local/sqlite
-```
-
-```
-#6657环境导出
-./configure --host=arm-linux-gnueabihf --prefix=/usr/local/sqlite
+export RFS="/"
+export CFLAGS="-save-temps -Wall -I${RFS}/usr/include -I${RFS}/usr/local/sqlite/include"
+export LDFLAGS="-I${RFS}/usr/include -L${RFS}/usr/lib -L${RFS}/lib -L${RFS}/usr/local/sqlite/lib"
 ```
 
 #### 3.编译
 
 ```
-make
+python setup.py build
 ```
 
 #### 4.安装
 
 ```
-make install
+python setup.py install
 ```
 
 
