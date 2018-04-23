@@ -36,5 +36,17 @@ make
 make install
 ```
 
+建立新的python的软链接
+
+```
+ln -s /usr/local/python27/bin/python /usr/bin/python
+```
+
+这时候我们再查看一下版本，确认是2.7.13
+
+```
+python -V
+```
+
 
 
